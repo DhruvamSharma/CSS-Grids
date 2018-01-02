@@ -1,7 +1,27 @@
 .container {
     display: grid;
     grid-gap: 5px;
+    /* auto-fit adds columns automatically depending on the space available and minmax sets the minimum width
+    of column (100px) and if it's less than that, it converts it into the fr unit*/
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    grid-template-rows: repeat(2, 100px);
+    /* automatically generate row of knowon width*/
+    grid-auto-rows: 75px;
+    /* make the available space lesser by pushing photos togother */
+    grid-auto-flow: dense;
 }
 
+.horizontal {
+    /* to start the picture from whatever position in the markup and its width will be two columns*/
+    grid-column: auto / span 2;
+}
+
+.vertical {
+    /* to start from whatever row defined in the markup and it's length willbe two rows*/
+    grid-row: auto / span 2;
+}
+
+.big {
+    /* shorthand for grid-row: auto/span 2*/
+    grid-column: span 2;
+    grid-row: span 2;
+}
