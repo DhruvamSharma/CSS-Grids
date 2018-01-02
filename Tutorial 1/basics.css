@@ -1,6 +1,9 @@
 html, body {
-    background-color: #ad8632;
-    margin: 10px;
+    box-sizing: border-box;
+    background-color: #ffeead;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
 }
 
 
