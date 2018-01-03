@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: [head-start] 100px [head-end content-start] 300px [content-end] ;
+    grid-template-rows:[head-start] 1fr [head-end content-start] 5fr [content-end] 2fr [footer-end];
+    
+    justify-content: space-evenly;
+    align-content: end;
+}
+
+.head {
+    grid-column: head / content;
+}
+
+.menu {
+    grid-column: head ;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-column: head / content;
+}

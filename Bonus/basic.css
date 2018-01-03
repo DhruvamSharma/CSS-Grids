@@ -1,0 +1,31 @@
+html,body {
+    margin: 5px;
+    background-color: tan;
+}
+
+.container > div {
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.container > div:nth-child(1n) {
+    background-color: cadetblue;
+}
+
+
+
+.container > div:nth-child(3n) {
+    background-color: chartreuse;
+}
+
+.container > div:nth-child(2n) {
+    background-color: crimson;
+}
+
+.container > div:nth-child(4n) {
+    background-color: slategrey;
+}
+
